@@ -128,15 +128,15 @@ def methodlogin():
 		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
 		menu()
 	if 'checkpoint' in url:
-			print("\n\x1b[1;31mYour Account is on Checkpoint")
-			os.system('rm -rf login.txt')
-			time.sleep(1)
-			keluar()
-		else:
-			print("\n\x1b[1;31mPassword/Email is wrong")
-			os.system('rm -rf login.txt')
-			time.sleep(1)
-			methodlogin()
+	        print("\n\x1b[1;31mYour Account is on Checkpoint")
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		keluar()
+	else:
+		print("\n\x1b[1;31mPassword/Email is wrong")
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		methodlogin()
 def login():
 	os.system('clear')
 	try:
