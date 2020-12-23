@@ -96,10 +96,10 @@ while (loop == 'true'):
         if (password == CorrectPassword):
             print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
-	os.system('clear')
-	try:
-		toket = open('login.txt','r')
-		loop = 'false'
+	    os.system('clear')
+	    try:
+		    toket = open('login.txt','r')
+		    loop = 'false'
 	
         else:
             print "\033[1;97mACCESS DENIED"
