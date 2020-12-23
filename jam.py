@@ -82,29 +82,21 @@ idh = []
 id = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
-os.system('clear')
+os.system("clear")
 print logo
-username = raw_input("[+] TOOL USERNAME: ")
-if username =="jam":
-os.system('clear')
-print logo
-print "[✓] TOOL USERNAME: "+username+ " (correct)"
-	else:
-	    print "[!] Invalid Username."
+
+CorrectUsername = "jam"
+CorrectPassword = "jam"
+
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input("\033[1;97mEnter Username \x1b[1;97m: \x1b[1;97m")
+    if (username == CorrectUsername):
+    	password = raw_input("\033[1;97mEnter Passcode \x1b[1;97m: \x1b[1;97m")
+        if (password == CorrectPassword):
+            print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
-	    os.system('clear')
-	    
-	passw = raw_input("[+] TOOL PASSWORD: ")
-	if passw =="muskan":
-	    os.system('clear')
-	    print logo
-	    print "[✓] TOOL USERNAME: " +username+ " (correct)"
-	    print "[✓] TOOL PASSWORD: " +passw+ "  (correct)"
-	    time.sleep(2)
-	else:
-	    print "[!] Invalid Password."
-	    time.sleep(1)
-	    os.system('clear')
+            loop = 'false
 	try:
 		toket = open('login.txt','r')
 		menu()
