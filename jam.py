@@ -124,7 +124,6 @@ def methodlogin():
 		hopa.close()
 		print "\n[✓] Logged In Successfully."
 		time.sleep(1)
-		os.system('xdg-open https://www.facebook.com/ch.imran.7370')
 		menu()
 	if 'checkpoint' in url:
 	        print("\n\x1b[1;31mYour Account is on Checkpoint")
@@ -231,8 +230,6 @@ def menu():
 	print "\033[1;97m------------------------------------------------------"
 		
 	print "\033[1;97m✧\033[1;97m.\033[1;97m1.\x1b[1;97m Start Cloning..."
-      
-        
         print "\033[1;97m✧\033[1;97m.\033[1;97m2.\033[1;97m Follow Me On Facebook For Help"
         print "\033[1;97m✧\033[1;97m.\033[1;97m0.\033[1;97m Logout            "
         hop()
@@ -314,8 +311,8 @@ def pilih_super():
 	            id.append(line.strip())
 	    except IOError:
 	         print"[!] File Not Found."
-	         raw_input('Press Enter To Back. ')
-	         super()
+	         raw_input('Press 0 To Back. ')
+	         pilih_super()
         
 	elif peak =="0":
 		menu()
