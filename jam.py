@@ -95,14 +95,12 @@ while (loop == 'true'):
             print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
             loop = 'false'
-	try:
-		toket = open('login.txt','r')
+	
         else:
             print "\033[1;97mACCESS DENIED"
             os.system('xdg-open https://www.facebook.com/ch.imran.7370')
-    else:
-        print "\033[1;97mACCESS DENIED"
-        os.system('xdg-open https://www.facebook.com/ch.imran.7370')
+	try:
+		toket = open('login.txt','r')
 def methodlogin():
 	try:
 		toket = open('login.txt','r')
