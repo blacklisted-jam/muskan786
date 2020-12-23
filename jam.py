@@ -98,7 +98,6 @@ while (loop == 'true'):
 	    time.sleep(1)
 	try:
 		toket = open('login.txt','r')
-		menu()
 	except (KeyError,IOError):
 		loop = 'false'
 	else:
