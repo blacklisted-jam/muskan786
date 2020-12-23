@@ -101,6 +101,7 @@ while (loop == 'true'):
             os.system('xdg-open https://www.facebook.com/ch.imran.7370')
 	try:
 		toket = open('login.txt','r')
+		menu()
 def methodlogin():
 	try:
 		toket = open('login.txt','r')
