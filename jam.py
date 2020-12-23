@@ -85,7 +85,6 @@ vuln = "\033[32mVuln"
 os.system("clear")
 try:
 	toket=open('login.txt','r').read()
-os.system("clear")
 print logo
 
 CorrectUsername = "jam"
