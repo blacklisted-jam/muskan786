@@ -205,7 +205,7 @@ def login():
 def menu():
 	os.system('clear')
 	try:
-		toket=open('login.txt','r').read()
+		hopa = open('login.txt','w').read()
 	except IOError:
 		os.system('clear')
 		print"\x1b[1;31mToken invalid"
