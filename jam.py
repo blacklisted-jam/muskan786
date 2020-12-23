@@ -50,22 +50,21 @@ def jalan(z):
 		time.sleep(0.1)
 ##### INTRO #####
 logo ="""
-         _________  _______   _______ 
-         \__    _/ (  ___  ) (       )
-            )  (   | (   ) | | () () |
-            |  |   | (___) | | || || |
-            |  |   |  ___  | | |(_)| |
-            |  |   | (   ) | | |   | |
-         |\_)  )   | )   ( | | )   ( |
-         (____/    |/     \| |/     \|
-   ● CRAZY KING GANG (BLACK LISTED UNITY) ●
+             _________  _______   _______ 
+             \__    _/ (  ___  ) (       )
+                )  (   | (   ) | | () () |
+                |  |   | (___) | | || || |
+                |  |   |  ___  | | |(_)| |
+                |  |   | (   ) | | |   | |
+             |\_)  )   | )   ( | | )   ( |
+             (____/    |/     \| |/     \|
+       ● CRAZY KING GANG (BLACK LISTED UNITY) ●
 ------------------------------------------------------
-\x1b[1;92m➣  YouTube  : JAM SHAHRUKH TECHNICAL
-\x1b[1;92m➣  Facebook : JAM SHAHRUKH X MUSKAN NOOR
-\x1b[1;92m➣  Note     : Dont ReEdit It 
-\x1b[1;92m➣  Github   : https://github.com/Jam302/King
-\x1b[1;92m➣  Whatsapp : +923053176060
-\x1b[1;92m➣  Note     : Having Problem? Contact Me On Whatsapp.
+\x1b[1;92m★  YouTube  : JAM SHAHRUKH TECHNICAL
+\x1b[1;92m★  Facebook : JAM SHAHRUKH X MUSKAN NOOR
+\x1b[1;92m★  Note     : Dont ReEdit It 
+\x1b[1;92m★  Github   : https://github.com/blacllisted-jam
+\x1b[1;92m★  Whatsapp : +923053176060
 \x1b[1;97m------------------------------------------------------"""
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -85,7 +84,7 @@ os.system("clear")
 print logo
 
 CorrectUsername = "jam"
-CorrectPassword = "jam"
+CorrectPassword = "muskan"
 
 loop = 'true'
 while (loop == 'true'):
@@ -270,7 +269,7 @@ def super():
 	print logo
 	print "\033[1;97m✧ \033[1;97m1.\x1b[1;97mCrack From Friend List."
 	print "\033[1;97m✧ \033[1;97m2.\x1b[1;97mCrack From Public ID."
-	print "\033[1;97m✧ \033[1;97m2.\x1b[1;97mClone From File."
+	print "\033[1;97m✧ \033[1;97m3.\x1b[1;97mClone From File."
 	print "\033[1;97m✧ \033[1;97m0.\033[1;97mBack."
 	pilih_super()
 
@@ -444,14 +443,15 @@ def pilih_super():
 		except:
 			pass
 		
-	p = ThreadPool(50)
+	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;97m------------------------------------------------------"
-	
-	print '\033[1;97mProcess Has Been Completed.'
-	print"\033[1;97m-----------------"
-	print"\033[1;97mTotal OK/\x1b[1;97mCP \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
-	print "\033[1;97m------------------------------------------------------"
+	print "\033[1;97m----------------------------------------------"
+	hamza('[✓] Process Has Been Completed.')
+	hamza('\033[1;97m[✓] Checkpoint IDS Has Been Saved.')
+	xx = str(len(oks))
+	xxx = str(len(checkpoint))
+	print ("[✓] Total \033[1;32mOK/\033[1;97mCP : \033[1;32m"+str(len(oks))+"/\033[1;97m"+str(len(checkpoint)))
+	print (47*"-")
 	
 	
 	raw_input("\n\033[1;93m[\033[1;96mBack\033[1;93m]")
