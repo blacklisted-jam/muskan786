@@ -58,11 +58,11 @@ logo ="""
     \____/  (_) /_/\_\ (_) \_|  |_/
 ● CRAZY KING GANG (BLACK LISTED UNITY) ●
 ------------------------------------------------------
-\x1b[1;92m★  YouTube  : JAM SHAHRUKH TECHNICAL
-\x1b[1;92m★  Facebook : JAM SHAHRUKH X MUSKAN NOOR
-\x1b[1;92m★  Note     : Dont ReEdit It 
-\x1b[1;92m★  Github   : https://github.com/blacllisted-jam
-\x1b[1;92m★  Whatsapp : +923053176060
+●  YouTube  : JAM SHAHRUKH TECHNICAL
+●  Facebook : JAM SHAHRUKH X MUSKAN NOOR
+●  Note     : Dont ReEdit It 
+●  Github   : https://github.com/blacllisted-jam
+●  Whatsapp : +923053176060
 \x1b[1;97m------------------------------------------------------"""
 def tik():
 	titik = ['.   ','..  ','... ']
