@@ -264,7 +264,7 @@ def super():
 		print"\x1b[1;97mToken invalid"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		login()
+		methodlogin()
 	os.system('clear')
 	print logo
 	print "\033[1;97m✧ \033[1;97m1.\x1b[1;97mCrack From Friend List."
@@ -305,7 +305,7 @@ def pilih_super():
 		z = json.loads(r.text)
 		for i in z['data']:
 			id.append(i['id'])
-	elif crm =="3":
+	elif peak =="3":
 	    os.system('clear')
 	    print banner
 	    try:
@@ -315,7 +315,7 @@ def pilih_super():
 	    except IOError:
 	         print"[!] File Not Found."
 	         raw_input('Press Enter To Back. ')
-	         crack()
+	         super()
         
 	elif peak =="0":
 		menu()
@@ -332,10 +332,10 @@ def pilih_super():
 ------------------------------------------------------"""		
 			
 	def main(arg):
-		global cekpoint,oks
+		global cpb,oks
 		user = arg
 		try:
-			os.mkdir('out')
+			os.mkdir('save')
 		except OSError:
 			pass #Dev:Jam
 		try:
