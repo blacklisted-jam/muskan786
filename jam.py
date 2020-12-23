@@ -99,12 +99,11 @@ while (loop == 'true'):
         else:
             print "\033[1;97mACCESS DENIED"
             os.system('xdg-open https://www.facebook.com/ch.imran.7370')
+	try:
+		toket = open('login.txt','r')
 	
 def methodlogin():
 	os.system('clear')
-	try:
-		toket = open('login.txt','r')
-		menu()
 	print logo
 	print "[1] Login With ID/Password."
 	print "[2] Login Using Token."
