@@ -448,8 +448,8 @@ def pilih_super():
 	p = ThreadPool(30)
 	p.map(main, id)
 	print "\033[1;97m----------------------------------------------"
-	hamza('[✓] Process Has Been Completed.')
-	hamza('\033[1;97m[✓] Checkpoint IDS Has Been Saved.')
+	print('[✓] Process Has Been Completed.')
+	print('\033[1;97m[✓] Checkpoint IDS Has Been Saved.')
 	xx = str(len(oks))
 	xxx = str(len(checkpoint))
 	print ("[✓] Total \033[1;32mOK/\033[1;97mCP : \033[1;32m"+str(len(oks))+"/\033[1;97m"+str(len(checkpoint)))
@@ -457,7 +457,6 @@ def pilih_super():
 	
 	
 	raw_input("\n\033[1;93m[\033[1;96mBack\033[1;93m]")
-	os.system('clear')
 	menu()
 
 if __name__ == '__main__':
