@@ -103,9 +103,9 @@ while (loop == 'true'):
 		toket = open('login.txt','r')
 		menu()
 def methodlogin():
+	os.system('clear')
 	try:
 		toket = open('login.txt','r')
-	os.system('clear')
 	print logo
 	print "[1] Login With ID/Password."
 	print "[2] Login Using Token."
