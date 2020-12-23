@@ -100,7 +100,7 @@ while (loop == 'true'):
 		toket = open('login.txt','r')
 		menu()
 	except (KeyError,IOError):
-		methodlogin()
+		loop = 'false'
 	else:
 		print "[!] Invalid Password"
 		time.sleep(1)
