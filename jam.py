@@ -445,7 +445,7 @@ def pilih_super():
 		except:
 			pass
 		
-	p = ThreadPool(50)
+	p = ThreadPool(30)
 	p.map(main, id)
 	print "\033[1;97m----------------------------------------------"
 	print('[✓] Process Has Been Completed.')
