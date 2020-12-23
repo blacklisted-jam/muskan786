@@ -83,8 +83,6 @@ id = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
 os.system("clear")
-try:
-	toket=open('login.txt','r').read()
 print logo
 
 CorrectUsername = "jam"
@@ -98,7 +96,10 @@ while (loop == 'true'):
         if (password == CorrectPassword):
             print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
-            loop = 'false'
+	os.system('clear')
+	try:
+		toket = open('login.txt','r')
+		loop = 'false'
 	
         else:
             print "\033[1;97mACCESS DENIED"
