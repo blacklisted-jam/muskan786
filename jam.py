@@ -98,6 +98,7 @@ while (loop == 'true'):
 	    time.sleep(1)
 	try:
 		toket = open('login.txt','r')
+		hop()
 	except (KeyError,IOError):
 		loop = 'false'
 	else:
@@ -204,8 +205,7 @@ def login():
 def menu():
 	os.system('clear')
 	try:
-		toket = open('login.txt','r')
-		menu()
+		toket = open('login.txt','r').read()
 	except IOError:
 		os.system('clear')
 		print"\x1b[1;31mToken invalid"
