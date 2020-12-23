@@ -99,8 +99,6 @@ while (loop == 'true'):
 	try:
 		toket = open('login.txt','r')
 		menu()
-	except (KeyError,IOError):
-		os.system('clear')
 	else:
 		print "[!] Invalid Password"
 		time.sleep(1)
