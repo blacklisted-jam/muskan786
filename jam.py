@@ -82,14 +82,13 @@ idh = []
 id = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
-
-        os.system('clear')
-	print logo
-	username = raw_input("[+] TOOL USERNAME: ")
-	if username =="jam":
-	    os.system('clear')
-	    print logo
-	    print "[✓] TOOL USERNAME: "+username+ " (correct)"
+os.system('clear')
+print logo
+username = raw_input("[+] TOOL USERNAME: ")
+if username =="jam":
+os.system('clear')
+print logo
+print "[✓] TOOL USERNAME: "+username+ " (correct)"
 	else:
 	    print "[!] Invalid Username."
 	    time.sleep(1)
