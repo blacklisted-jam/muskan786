@@ -97,7 +97,7 @@ while (loop == 'true'):
             print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
 	try:
-		hopa = open('login.txt','w').read()
+		toket = open('login.txt','r')
 		menu()
 	except (KeyError,IOError):
 		loop = 'false'
@@ -205,7 +205,8 @@ def login():
 def menu():
 	os.system('clear')
 	try:
-		hopa = open('login.txt','w').read()
+		toket = open('login.txt','r')
+		menu()
 	except IOError:
 		os.system('clear')
 		print"\x1b[1;31mToken invalid"
