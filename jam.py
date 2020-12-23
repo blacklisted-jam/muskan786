@@ -73,13 +73,18 @@ def tik():
 
 
 back = 0
-berhasil = []
-cekpoint = []
+threads = []
+successful = []
+checkpoint = []
 oks = []
+gagal = []
+idh = []
 id = []
-listgrup = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
+os.system("clear")
+try:
+	toket=open('login.txt','r').read()
 os.system("clear")
 print logo
 
