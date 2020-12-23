@@ -97,7 +97,7 @@ while (loop == 'true'):
             print "\033[1;97mAccess Granted "#Dev:Jam_Shahrukh
 	    time.sleep(1)
 	try:
-		toket=open('login.txt','r').read()
+		hopa = open('login.txt','w').read()
 		menu()
 	except (KeyError,IOError):
 		loop = 'false'
