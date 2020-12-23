@@ -100,7 +100,7 @@ while (loop == 'true'):
 		toket = open('login.txt','r')
 		menu()
 	except (KeyError,IOError):
-		loop = 'false'
+		os.system('clear')
 	else:
 		print "[!] Invalid Password"
 		time.sleep(1)
@@ -124,7 +124,7 @@ def methodlogin():
 		print logo
 		hosp = raw_input("[+] Give Token : ")
 		tik()
-		hopa = open('login.txt','w')
+		hopa = open('login.txt','r')
 		hopa.write(hosp)
 		hopa.close()
 		print "\n[✓] Logged In Successfully."
