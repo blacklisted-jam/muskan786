@@ -304,7 +304,7 @@ def pilih_super():
 			id.append(i['id'])
 	elif peak =="3":
 	    os.system('clear')
-	    print banner
+	    print logo
 	    try:
 	        idlist= raw_input('[+] File Name: ')
 	        for line in open(idlist ,'r').readlines():
@@ -312,7 +312,7 @@ def pilih_super():
 	    except IOError:
 	         print"[!] File Not Found."
 	         raw_input('Press 0 To Back. ')
-	         pilih_super()
+	         super()
         
 	elif peak =="0":
 		menu()
