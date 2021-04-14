@@ -57,27 +57,42 @@ logo = """
 \033[1;97m➣ User: jam ➣ Pass: xtylo
 \033[1;91m-----------------------------------------------"""
 
-
-CorrectUsername = "jam"
-CorrectPassword = "xtylo"
-
-loop = 'true'
-while (loop == 'true'):
-    username = raw_input("\033[1;96m[☆] \x1b[0;31mUSERNAME TOOLS INI \x1b[1;96m>>>> ")
-    if (username == CorrectUsername):
-    	password = raw_input("\033[1;96m[☆] \x1b[0;31mPASSWORD TOOLS INI \x1b[1;96m>>>> ")
-        if (password == CorrectPassword):
-            print "Logged in successfully as " + username
-            loop = 'false'
-        else:
-            print "yTry Again"
-            os.system('xdg-open https://m.facebook.com/jam.shahrukh.official')
-    else:
-        print "Try Again!"
-        os.system('xdg-open https://m.facebook.com/jam.shahrukh.official')
+def tlogin():
+	os.system('clear')
+	print logo
+	username = raw_input("[+] TOOL USERNAME: ")
+	if username =="jam":
+	    os.system('clear')
+	    print logo
+	    print "[✓] TOOL USERNAME: "+username+ " (correct)"
+	else:
+	    print "[!] Invalid Username."
+	    time.sleep(1)
+	    tlogin()
+	    
+	passw = raw_input("[+] TOOL PASSWORD: ")
+	if passw =="xtylo":
+	    os.system('clear')
+	    print logo
+	    print "[✓] TOOL USERNAME: " +username+ " (correct)"
+	    print "[✓] TOOL PASSWORD: " +passw+ "  (correct)"
+	    time.sleep(2)
+	else:
+	    print "[!] Invalid Password."
+	    time.sleep(1)
+	    tlogin()
+	try:
+		t_check = open('access_token.txt', 'r')
+	except (KeyError,IOError):
+		log_menu()
 
     r = requests.get('https://www.facebook.com/Jam.shahrukh.official')
-    if to in r:
+except requests.exceptions.ConnectionError:
+    if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
+	os.system("apt update && apt install nodejs -y")
+from requests.exceptions import ConnectionError
+os.system("git pull")
+if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_modules/bytes/index.js"):
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
         os.system('#')
@@ -769,4 +784,4 @@ def c_s():
     choice_crack()
 
 if __name__ == '__main__':
-    reg()
+    tlogin()
