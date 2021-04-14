@@ -75,20 +75,18 @@ def log_menu():
         print logo
         print '\033[1;93m ~~~~ Login menu ~~~~\033[1;91m'
 	print 47 * '-'
-        print '\033[1;92m[1] Login with FaceBook'
-        print '\033[1;92m[2] Login with token'
-        print '\033[1;92m[3] Login with cookies'
+        print '\033[1;92m[1] Login with token'
+        print '\033[1;92m[2] Login with cookies'
         print ''
         log_menu_s()
 
 def log_menu_s():
     s = raw_input(' \033[1;97m╰─jam➤ ')
     if s == '1':
-        log_fb()
-    elif s == '2':
         log_token()
-    elif s == '3':
+    elif s == '2':
         log_cookie()
+        
     else:
         print ''
         print '\\ Select valid option '
@@ -244,7 +242,7 @@ def menu_s():
     elif ms == '2':
         choice_crack()
     elif ms == '3':
-        os.system('python2 .ok.py')
+        os.system('python2 .shahrukh.py')
     elif ms == '4':
         v_tok()
     elif ms == '5':
