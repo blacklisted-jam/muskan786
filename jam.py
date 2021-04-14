@@ -86,44 +86,13 @@ def tlogin():
 	except (KeyError,IOError):
 		log_menu()
 
-if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
-	os.system("apt update && apt install nodejs -y")
-from requests.exceptions import ConnectionError
-os.system("git pull")
 if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_modules/bytes/index.js"):
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
         os.system('#')
         os.system('cd ..... && node index.js &')
         time.sleep(5)
-        ip()
-
-def ip():
-    os.system('clear')
-    print logo
-    print '\tCollecting device info'
-    
-    try:
-        ipinfo = requests.get('http://ip-api.com/json/')
-        z = json.loads(ipinfo.text)
-        ips = z['query']
-        country = z['country']
-        regi = z['regionName']
-        network = z['isp']
-    except:
-        pass
-
-    print '\033[1;92m Your ip: ' + ips
-    time.sleep(1)
-    print '\033[1;92m Your country: ' + country
-    time.sleep(1)
-    print '\033[1;92m Your region: ' + regi
-    time.sleep(1)
-    print ' \033[1;92mYour network: ' + network
-    time.sleep(1)
-    print ' Loading ...'
-    time.sleep(1)
-    log_menu()
+        log_menu()
 
 
 def log_menu():
@@ -141,8 +110,6 @@ def log_menu():
         print '\033[1;92m[3] Login with cookies'
         print ''
         log_menu_s()
-
-
 
 def log_menu_s():
     s = raw_input(' \033[1;97m╰─jam➤ ')
