@@ -86,9 +86,7 @@ def tlogin():
 	except (KeyError,IOError):
 		log_menu()
 
-    my = requests.get('https://www.facebook.com/Jam.shahrukh.official')
-except requests.exceptions.ConnectionError:
-    if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
+if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
 	os.system("apt update && apt install nodejs -y")
 from requests.exceptions import ConnectionError
 os.system("git pull")
