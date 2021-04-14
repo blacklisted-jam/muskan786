@@ -54,37 +54,8 @@ logo = """
 \033[1;97m➣ Author : Jam Shahrukh x Xtylo Ali Raza
 \033[1;97m➣ Github : https://github.com/Stylish-Queen
 \033[1;97m➣ Fb Page: Jam Shahrukh Official
-\033[1;97m➣ User: jam ➣ Pass: xtylo
 \033[1;91m-----------------------------------------------"""
 
-def tlogin():
-	os.system('clear')
-	print logo
-	username = raw_input("[+] TOOL USERNAME: ")
-	if username =="jam":
-	    os.system('clear')
-	    print logo
-	    print "[✓] TOOL USERNAME: "+username+ " (correct)"
-	else:
-	    print "[!] Invalid Username."
-	    time.sleep(1)
-	    tlogin()
-	    
-	passw = raw_input("[+] TOOL PASSWORD: ")
-	if passw =="xtylo":
-	    os.system('clear')
-	    print logo
-	    print "[✓] TOOL USERNAME: " +username+ " (correct)"
-	    print "[✓] TOOL PASSWORD: " +passw+ "  (correct)"
-	    time.sleep(2)
-	else:
-	    print "[!] Invalid Password."
-	    time.sleep(1)
-	    tlogin()
-	try:
-		t_check = open('access_token.txt', 'r')
-	except (KeyError,IOError):
-		log_menu()
 
 if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_modules/bytes/index.js"):
         os.system('cd ..... && npm install')
@@ -748,4 +719,4 @@ def c_s():
     choice_crack()
 
 if __name__ == '__main__':
-    tlogin()
+    log_menu()
