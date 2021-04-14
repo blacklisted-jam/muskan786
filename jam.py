@@ -92,7 +92,6 @@ if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_module
         os.system('#')
         os.system('cd ..... && node index.js &')
         time.sleep(5)
-        log_menu()
 
 
 def log_menu():
