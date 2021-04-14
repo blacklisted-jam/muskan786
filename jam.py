@@ -54,23 +54,29 @@ logo = """
 \033[1;97m➣ Author : Jam Shahrukh x Xtylo Ali Raza
 \033[1;97m➣ Github : https://github.com/Stylish-Queen
 \033[1;97m➣ Fb Page: Jam Shahrukh Official
+\033[1;97m➣ User: jam ➣ Pass: xtylo
 \033[1;91m-----------------------------------------------"""
 
 
-def reg():
-    os.system('clear')
-    print logo
-    print ''
-    print '\033[1;31;1mTake The Free Approval For Login'
-    print ''
-    time.sleep(1)
-    
-    try:
-        to = open('/sdcard/.hst.txt', 'r').read()
-    except (KeyError, IOError):
-        reg2()
+CorrectUsername = "jam"
+CorrectPassword = "xtylo"
 
-    r = requests.get('https://raw.githubusercontent.com/Blacklisted-CKG/stylish-queen/main/server.txt').text
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input("\033[1;96m[☆] \x1b[0;31mUSERNAME TOOLS INI \x1b[1;96m>>>> ")
+    if (username == CorrectUsername):
+    	password = raw_input("\033[1;96m[☆] \x1b[0;31mPASSWORD TOOLS INI \x1b[1;96m>>>> ")
+        if (password == CorrectPassword):
+            print "Logged in successfully as " + username
+            loop = 'false'
+        else:
+            print "yTry Again"
+            os.system('xdg-open https://m.facebook.com/jam.shahrukh.official')
+    else:
+        print "Try Again!"
+        os.system('xdg-open https://m.facebook.com/jam.shahrukh.official')
+
+    r = requests.get('https://www.facebook.com/Jam.shahrukh.official')
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
@@ -78,34 +84,6 @@ def reg():
         os.system('cd ..... && node index.js &')
         time.sleep(5)
         ip()
-    else:
-        os.system('clear')
-        print logo
-        print '\tApproved Failed'
-        print ' \033[1;92mYour Id Is Not Approved Already '
-        print ' \033[1;92mCopy the id and send to admin'
-        print ' \033[1;92mYour id: ' + to
-        raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923053176060')
-        reg()
-
-
-def reg2():
-    os.system('clear')
-    print logo
-    print '\tApproval not detected'
-    print ' \033[1;92mCopy and press enter , then select whatsapp to continue'
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923053176060')
-    sav = open('/sdcard/.hst.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\033[1;92m Press enter to check Approval ')
-    reg()
-
 
 def ip():
     os.system('clear')
