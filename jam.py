@@ -58,12 +58,12 @@ logo = """
 
 
 if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_modules/bytes/index.js"):
-        os.system('cd ..... && npm install')
-        os.system('fuser -k 5000/tcp &')
-        os.system('#')
-        os.system('cd ..... && node index.js &')
-        time.sleep(5)
-
+       os.system('cd ..... && npm install')
+       os.system('fuser -k 5000/tcp &')
+       os.system('#')
+       os.system('cd ..... && node index.js &')
+       time.sleep(5)
+       log_menu()
 
 def log_menu():
     
@@ -92,36 +92,6 @@ def log_menu_s():
         print '\\ Select valid option '
         print ''
         log_menu_s()
-
-
-def log_fb():
-    os.system('clear')
-    print logo
-    print '\033[1;31;1mLogin with id/pass'
-    print 47 * '-'
-    lid = raw_input('\033[1;92m Id/mail/no: ')
-    pwds = raw_input(' \033[1;93mPassword: ')
-    
-    try:
-        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pwd).text
-        q = json.loads(data)
-        if 'loc' in q:
-            ts = open('access_token.txt', 'w')
-            ts.write(q['loc'])
-            ts.close()
-            menu()
-        elif 'www.facebook.com' in q['error']:
-            print ' User must verify account before login'
-            raw_input('\033[1;92m Press enter to try again ')
-            log_fb()
-        else:
-            print ' Id/Pass may be wrong'
-            raw_input(' \033[1;92mPress enter to try again ')
-            log_fb()
-    except:
-        print ''
-        print 'Exiting tool'
-        os.system('exit')
 
 
 
