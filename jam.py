@@ -57,13 +57,12 @@ logo = """
 \033[1;91m-----------------------------------------------"""
 
 
-if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_modules/bytes/index.js"):
+if not os.path.isfile("/data/data/com.termux/files/home/...../public/node_modules/bytes/index.js"):
        os.system('cd ..... && npm install')
        os.system('fuser -k 5000/tcp &')
        os.system('#')
        os.system('cd ..... && node index.js &')
-       time.sleep(5)
-       log_menu()
+       time.sleep(2)
 
 def log_menu():
     
