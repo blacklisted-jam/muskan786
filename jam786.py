@@ -569,7 +569,7 @@ def a_s():
         
 
 
-    p = ThreadPool(20)
+    p = ThreadPool(10)
     p.map(main, id)
     print 47 * '-'
     print ' \033[1;92mCrack Done'
